@@ -21,6 +21,6 @@ public class Main {
         Aula02 example01 = new Aula02();
         Aula03 example02 = new Aula03();
 
-        example02.question1();
+        example02.question5();
     }
 }
