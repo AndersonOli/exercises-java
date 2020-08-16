@@ -1,4 +1,4 @@
-package com.andersonoli.aula2;
+package com.andersonoli.aulas;
 
 import com.andersonoli.Main;
 

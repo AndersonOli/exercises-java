@@ -1,6 +1,7 @@
 package com.andersonoli;
 
-import com.andersonoli.aula2.Aula02;
+import com.andersonoli.aulas.Aula02;
+import com.andersonoli.aulas.Aula03;
 
 import java.util.Scanner;
 
@@ -18,7 +19,8 @@ public class Main {
 
     public static void main(String[] args) {
         Aula02 example01 = new Aula02();
+        Aula03 example02 = new Aula03();
 
-        example01.question4();
+        example02.question1();
     }
 }
