@@ -27,7 +27,7 @@ public class Main {
         Aula04 aula04 = new Aula04();
         Aula05 aula05 = new Aula05();
 
-        aula05.question02();
+        aula05.question01();
 
         // segundo bimestre
         Lista01 lista01 = new Lista01();
