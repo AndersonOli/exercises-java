@@ -5,6 +5,7 @@ import com.andersonoli.aulas.Aula03;
 import com.andersonoli.aulas.Aula04;
 import com.andersonoli.aulas.Aula05;
 import com.andersonoli.segundo_periodo.Lista01;
+import com.andersonoli.segundo_periodo.Lista02;
 
 import java.util.Scanner;
 
@@ -31,7 +32,10 @@ public class Main {
 
         // segundo bimestre
         Lista01 lista01 = new Lista01();
+        Lista02 lista02 = new Lista02();
 
-        lista01.question01();
+//        lista01.question01();
+
+        lista02.question15();
     }
 }
