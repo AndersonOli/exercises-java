@@ -10,24 +10,30 @@ public class Lista01 {
     }
 
     public void question01(){
-        System.out.print("Valor a ser pago: ");
-        double valor = this.leitor.nextDouble();
-
         System.out.print("Preço do produto: ");
-        double preco = this.leitor.nextDouble();
+        double preco = Double.parseDouble(this.leitor.next());
 
-        System.out.println("O seu troco é: " + (preco - valor));
+        System.out.print("Valor pago: ");
+        double valor = Double.parseDouble(this.leitor.next());
+
+        double troco = valor - preco;
+
+        if(troco < 0){
+            System.out.println("\nO seu dinheiro é insuficiente, é necessário mais R$" + (-1 * troco));
+        } else {
+            System.out.println("\nO seu troco é: " + troco);
+        }
     }
 
     public void question02(){
         System.out.print("Valor de A: ");
-        double a = leitor.nextFloat();
+        double a = Double.parseDouble(this.leitor.next());
 
         System.out.print("Valor de B: ");
-        double b = leitor.nextFloat();
+        double b = Double.parseDouble(this.leitor.next());
 
         System.out.print("Valor de C: ");
-        double c = leitor.nextFloat();
+        double c = Double.parseDouble(this.leitor.next());
 
         double delta = (Math.pow(b, 2)) - (4 * a * c);
 
@@ -50,7 +56,7 @@ public class Lista01 {
         double multa = 0;
 
         System.out.print("Insira o peso do peixes [Kg]: ");
-        double peso = this.leitor.nextDouble();
+        double peso = Double.parseDouble(this.leitor.next());
 
         if(peso > 50){
             excesso =  peso - 50;
@@ -64,7 +70,7 @@ public class Lista01 {
     public void question04(){
         Scanner leitor = new Scanner(System.in);
         System.out.print("Insira o valor de N: ");
-        int valorN = leitor.nextInt();
+        int valorN = Integer.parseInt(this.leitor.next());;
         //System.out.println("O valor de S é: " + calculo(valorN));
         System.out.println("O valor de S é: " + calculoR(valorN));
     }
@@ -110,7 +116,7 @@ public class Lista01 {
     public void question06(){
         while(true){
             System.out.print("Informe um número: ");
-            int numero = this.leitor.nextInt();
+            int numero = Integer.parseInt(this.leitor.next());
 
             if(numero < 10){
                 System.out.println("O fatorial do número " + numero + " é: " + fatorial(numero));
